@@ -1,4 +1,4 @@
-#Hhashcheck
+#Hashcheck
 
 Ruby script to check file checksums with the Windows CertUtil Command
 
