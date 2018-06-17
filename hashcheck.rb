@@ -1,4 +1,4 @@
-# Secure_Hash_Algorithm choices: MD2 MD4 MD5 SHA1 SHA256 SHA384 SHA512
+# Secure Hash Algorithm choices: md2 md4 md5 sha1 sha256 sha384 sha512
 
 require 'optparse'
 require 'paint'
