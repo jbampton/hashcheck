@@ -1,7 +1,7 @@
 # Secure_Hash_Algorithm choices: MD2 MD4 MD5 SHA1 SHA256 SHA384 SHA512
 
-require 'paint'
 require 'optparse'
+require 'paint'
 
 # implement commandline options
 options = {:file => nil, :algorithm => nil}
