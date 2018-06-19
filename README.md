@@ -17,3 +17,5 @@ To enter interactive mode type:
 $ ruby hashcheck.rb
 ```
 Code overview of **``haskcheck.rb``** can be seen on the [RubyCritic](http://thebeast.me/hashcheck/rubycritic/overview.html) page.
+
+<a href="https://info.flagcounter.com/VIHH"><img src="https://s04.flagcounter.com/count2/VIHH/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_250/viewers_0/labels_1/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
