@@ -11,6 +11,7 @@ Usage: hashcheck.rb [options]
     -f, --file file                  Path to file
     -a, --algorithm algorithm        Algorithm
     -h, --help                       Displays help
+        --version                    Show program version
 ```
 To enter interactive mode type:
 ```
