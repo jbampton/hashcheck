@@ -3,6 +3,8 @@
 require 'optparse'
 require 'paint'
 
+VERSION = '1.0.0'.freeze
+
 # implement commandline options
 options = {:file => nil, :algorithm => nil}
 
@@ -19,6 +21,11 @@ parser = OptionParser.new do |opts|
 
   opts.on('-h', '--help', 'Displays help') do
     puts opts
+    exit
+  end
+
+  opts.on_tail('--version', 'Show program version') do
+    puts VERSION
     exit
   end
 end
