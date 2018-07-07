@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Always forgetting that Windows checksum commmand??  No problem...
   Ruby to the rescue with the HashCheck command line utility
 baseurl: "" # the subpath of your site, e.g. /blog
-url: http://thebeast.me/hashcheck/ # the base hostname & protocol for your site, e.g. http://example.com
+url: http://thebeast.me/hashcheck # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
