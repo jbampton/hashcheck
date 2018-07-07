@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Hashcheck!"
 date:   2018-07-08 03:26:13 +1000
 categories: jekyll update
 ---
