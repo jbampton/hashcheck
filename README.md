@@ -1,3 +1,9 @@
+---
+layout: page
+title: README
+permalink: /readme/
+---
+
 # Hashcheck
 
 **``hashcheck.rb``** is a Ruby based command line program that

@@ -44,7 +44,7 @@
     <div class="file-time">
       <span class="committed-at">
         
-          Updated <time class='js-timeago' datetime='2018-06-18 02:34:53 +1000'>2018-06-18 02:34:53 +1000</time>
+          Updated <time class='js-timeago' datetime='2018-06-24 12:36:22 +1000'>2018-06-24 12:36:22 +1000</time>
         
       </span>
     </div>
@@ -59,22 +59,22 @@
       <div class="col-md-8">
         <div class="row">
           <div class="col-md-1">
-            <div class="rating a big">
-              A
+            <div class="rating c big">
+              C
             </div>
           </div>
           <div class="code-statistics col-md-11">
             <div class="col-md-3">
-              <div><span class="metric">38</span><small> lines of codes</small></div>
+              <div><span class="metric">45</span><small> lines of codes</small></div>
               <div><span class="metric">0</span><small> methods</small></div>
             </div>
             <div class="col-md-3">
               <div><span class="metric">N/A</span><small> complexity/method</small></div>
-              <div><span class="metric">4</span><small> churn</small></div>
+              <div><span class="metric">5</span><small> churn</small></div>
             </div>
             <div class="col-md-3">
               <div><span class="metric">0.0</span><small> complexity</small></div>
-              <div><span class="metric">0</span><small> duplications</small></div>
+              <div><span class="metric">56</span><small> duplications</small></div>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@
             <li><a href="#" id="toggle-code" class="toggle-button button">code</a></li>
             <li class="active">
               <a href="#" id="toggle-smells" class="toggle-button button">
-                0
+                1
                 smell
               </a>
             </li>
@@ -99,10 +99,12 @@
 require &#39;optparse&#39;
 require &#39;paint&#39;
 
+VERSION = &#39;1.0.0&#39;.freeze
+
 # implement commandline options
 options = {:file =&gt; nil, :algorithm =&gt; nil}
 
-parser = OptionParser.new do |opts|
+parser = OptionParser.new do |opts|<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden"true"=""></i>          <a href="http://docs.seattlerb.org/flay/" target="_blank"><b>DuplicateCode</b></a>        </span>      </div>      <span>Identical code found in 2 nodes</span>              <span>Locations:</span>                  <a href="_site/hashcheck.html#L11" class="js-smell-location">0</a>                  <a href="hashcheck.html#L11" class="js-smell-location">1</a>                  </div>  </li></ol>
   opts.banner = &quot;Usage: #{Paint[&#39;hashcheck.rb [options]&#39;, :red, :white]}&quot;
 
   opts.on(&#39;-f&#39;, &#39;--file file&#39;, &#39;Path to file&#39;) do |file|
@@ -115,6 +117,11 @@ parser = OptionParser.new do |opts|
 
   opts.on(&#39;-h&#39;, &#39;--help&#39;, &#39;Displays help&#39;) do
     puts opts
+    exit
+  end
+
+  opts.on_tail(&#39;--version&#39;, &#39;Show program version&#39;) do
+    puts VERSION
     exit
   end
 end
